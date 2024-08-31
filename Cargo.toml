@@ -1,0 +1,17 @@
+[package]
+name = "simple_token_faucet"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+test-bpf = []
+
+[dependencies]
+solana-program = "2.0.7"
+getrandom = { version = "0.1.14", features = ["dummy"] }
+# These dependencies are only needed when testing.
+solana-program-test = { version = "2.0.7", optional = true }
+solana-sdk = { version = "2.0.7", optional = true }
