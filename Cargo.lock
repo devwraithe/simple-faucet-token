@@ -408,6 +408,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "base58"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6107fe1be6682a68940da878d9e9f5e90ca5745b3dec9fd1bb393c8777d4f581"
+
+[[package]]
 name = "base64"
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3393,8 +3399,10 @@ checksum = "74233d3b3b2f6d4b006dc19dee745e73e2a6bfb6f93607cd3b02bd5b00797d7c"
 name = "simple_token_faucet"
 version = "0.1.0"
 dependencies = [
+ "base58",
  "borsh 1.5.1",
  "getrandom 0.1.16",
+ "solana-client",
  "solana-program",
  "solana-program-test",
  "solana-sdk",
