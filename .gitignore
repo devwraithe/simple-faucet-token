@@ -1,3 +1,4 @@
 /target
 .env
-faucet-keypair.json
+faucet_keypair.json
+user_keypair.json
